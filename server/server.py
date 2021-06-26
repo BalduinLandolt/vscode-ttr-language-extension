@@ -20,7 +20,9 @@ from pygls.lsp.types import (CompletionItem, CompletionList, CompletionOptions,
 from pygls.lsp.types.basic_structures import (WorkDoneProgressBegin,
                                               WorkDoneProgressEnd,
                                               WorkDoneProgressReport)
-from pygls.server import LanguageServer
+from pygls.server import LanguageServer, Server
+
+from .transformer import Transformer
 
 COUNT_DOWN_START_IN_SECONDS = 10
 COUNT_DOWN_SLEEP_IN_SECONDS = 1
@@ -43,8 +45,25 @@ class TTRLanguageServer(LanguageServer):
 
 
 ttr_server = TTRLanguageServer()
+transfomer = Transformer()
 
 # TODO: strict typing
+
+# TODO: fix issue with extension debuging and client crash on closing
+
+
+@ttr_server.thread()
+def _transform_to_xml(ls, params):
+    ttr_server.show_message("Kicking off transformation...")
+    text_doc = ls.workspace.get_document(params.text_document.uri)
+    source = text_doc.source
+    # TODO: add locking mechanism
+    # TODO: add setting for cadence (also on save instead of life reload; delay in seconds)
+    out = transfomer.transform(source)
+    ttr_server.show_message(out)
+    # TODO: store result in output file
+    # TODO: add settings for where to store the file
+    # TODO: do something with the XML file (xslt?)
 
 
 def _validate(ls, params):
@@ -130,7 +149,7 @@ def completions(params: Optional[CompletionParams] = None) -> CompletionList:
 def did_change(ls, params: DidChangeTextDocumentParams):
     """Text document did change notification."""
     _validate(ls, params)
-    # TODO: start transformation here
+    _transform_to_xml(ls, params)
 
 
 @ttr_server.feature(TEXT_DOCUMENT_DID_CLOSE)
@@ -145,7 +164,7 @@ async def did_open(ls, params: DidOpenTextDocumentParams):
     """Text document did open notification."""
     ls.show_message('Text Document Did Open')
     _validate(ls, params)
-    # TODO: start transformation here
+    _transform_to_xml(ls, params)
 
 
 # @ttr_server.command(TTRLanguageServer.CMD_PROGRESS)
