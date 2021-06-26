@@ -25,8 +25,8 @@ Open terminal and execute following commands:
 
 ## TODO-List
 
+- [x] get package.json right
+- [x] publish to github
 - [ ] Set up pipenv
-- [ ] get package.json right
-- [ ] publish to github
 - [ ] implement language (duh...)
 - [ ] tests

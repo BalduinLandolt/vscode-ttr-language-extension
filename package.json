@@ -3,7 +3,10 @@
     "displayName": "TurboTranscriber Language Extension",
     "description": "TurboTranscriber Language Extension",
     "author": "Balduin Landolt",
-    "repository": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BalduinLandolt/vscode-ttr-language-extension"
+    },
     "license": "MIT",
     "version": "0.0.0",
     "publisher": "BalduinLandolt",
