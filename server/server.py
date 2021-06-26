@@ -26,7 +26,7 @@ COUNT_DOWN_START_IN_SECONDS = 10
 COUNT_DOWN_SLEEP_IN_SECONDS = 1
 
 
-class TTSLanguageServer(LanguageServer):
+class TTRLanguageServer(LanguageServer):
     CMD_COUNT_DOWN_BLOCKING = 'countDownBlocking'
     CMD_COUNT_DOWN_NON_BLOCKING = 'countDownNonBlocking'
     CMD_PROGRESS = 'progress'
@@ -42,7 +42,7 @@ class TTSLanguageServer(LanguageServer):
         super().__init__()
 
 
-tts_server = TTSLanguageServer()
+ttr_server = TTRLanguageServer()
 
 
 def _validate(ls, params):
@@ -73,7 +73,7 @@ def _validate_json(source):
                 end=Position(line=line - 1, character=col)
             ),
             message=msg,
-            source=type(tts_server).__name__
+            source=type(ttr_server).__name__
         )
 
         diagnostics.append(d)
@@ -81,7 +81,7 @@ def _validate_json(source):
     return diagnostics
 
 
-@tts_server.feature(COMPLETION, CompletionOptions(trigger_characters=[',']))
+@ttr_server.feature(COMPLETION, CompletionOptions(trigger_characters=[',']))
 def completions(params: Optional[CompletionParams] = None) -> CompletionList:
     """Returns completion items."""
     return CompletionList(
@@ -97,7 +97,7 @@ def completions(params: Optional[CompletionParams] = None) -> CompletionList:
     )
 
 
-@tts_server.command(TTSLanguageServer.CMD_COUNT_DOWN_BLOCKING)
+@ttr_server.command(TTRLanguageServer.CMD_COUNT_DOWN_BLOCKING)
 def count_down_10_seconds_blocking(ls, *args):
     """Starts counting down and showing message synchronously.
     It will `block` the main thread, which can be tested by trying to show
@@ -108,7 +108,7 @@ def count_down_10_seconds_blocking(ls, *args):
         time.sleep(COUNT_DOWN_SLEEP_IN_SECONDS)
 
 
-@tts_server.command(TTSLanguageServer.CMD_COUNT_DOWN_NON_BLOCKING)
+@ttr_server.command(TTRLanguageServer.CMD_COUNT_DOWN_NON_BLOCKING)
 async def count_down_10_seconds_non_blocking(ls, *args):
     """Starts counting down and showing message asynchronously.
     It won't `block` the main thread, which can be tested by trying to show
@@ -119,27 +119,27 @@ async def count_down_10_seconds_non_blocking(ls, *args):
         await asyncio.sleep(COUNT_DOWN_SLEEP_IN_SECONDS)
 
 
-@tts_server.feature(TEXT_DOCUMENT_DID_CHANGE)
+@ttr_server.feature(TEXT_DOCUMENT_DID_CHANGE)
 def did_change(ls, params: DidChangeTextDocumentParams):
     """Text document did change notification."""
     _validate(ls, params)
 
 
-@tts_server.feature(TEXT_DOCUMENT_DID_CLOSE)
-def did_close(server: TTSLanguageServer, params: DidCloseTextDocumentParams):
+@ttr_server.feature(TEXT_DOCUMENT_DID_CLOSE)
+def did_close(server: TTRLanguageServer, params: DidCloseTextDocumentParams):
     """Text document did close notification."""
     server.show_message('Text Document Did Close')
 
 
-@tts_server.feature(TEXT_DOCUMENT_DID_OPEN)
+@ttr_server.feature(TEXT_DOCUMENT_DID_OPEN)
 async def did_open(ls, params: DidOpenTextDocumentParams):
     """Text document did open notification."""
     ls.show_message('Text Document Did Open')
     _validate(ls, params)
 
 
-@tts_server.command(TTSLanguageServer.CMD_PROGRESS)
-async def progress(ls: TTSLanguageServer, *args):
+@ttr_server.command(TTRLanguageServer.CMD_PROGRESS)
+async def progress(ls: TTRLanguageServer, *args):
     """Create and start the progress on the client."""
     token = 'token'
     # Create
@@ -157,8 +157,8 @@ async def progress(ls: TTSLanguageServer, *args):
     ls.progress.end(token, WorkDoneProgressEnd(message='Finished'))
 
 
-@tts_server.command(TTSLanguageServer.CMD_REGISTER_COMPLETIONS)
-async def register_completions(ls: TTSLanguageServer, *args):
+@ttr_server.command(TTRLanguageServer.CMD_REGISTER_COMPLETIONS)
+async def register_completions(ls: TTRLanguageServer, *args):
     """Register completions method on the client."""
     params = RegistrationParams(registrations=[
         Registration(
@@ -174,15 +174,15 @@ async def register_completions(ls: TTSLanguageServer, *args):
                         MessageType.Error)
 
 
-@tts_server.command(TTSLanguageServer.CMD_SHOW_CONFIGURATION_ASYNC)
-async def show_configuration_async(ls: TTSLanguageServer, *args):
+@ttr_server.command(TTRLanguageServer.CMD_SHOW_CONFIGURATION_ASYNC)
+async def show_configuration_async(ls: TTRLanguageServer, *args):
     """Gets exampleConfiguration from the client settings using coroutines."""
     try:
         config = await ls.get_configuration_async(
             ConfigurationParams(items=[
                 ConfigurationItem(
                     scope_uri='',
-                    section=TTSLanguageServer.CONFIGURATION_SECTION)
+                    section=TTRLanguageServer.CONFIGURATION_SECTION)
             ]))
 
         example_config = config[0].get('exampleConfiguration')
@@ -193,8 +193,8 @@ async def show_configuration_async(ls: TTSLanguageServer, *args):
         ls.show_message_log(f'Error ocurred: {e}')
 
 
-@tts_server.command(TTSLanguageServer.CMD_SHOW_CONFIGURATION_CALLBACK)
-def show_configuration_callback(ls: TTSLanguageServer, *args):
+@ttr_server.command(TTRLanguageServer.CMD_SHOW_CONFIGURATION_CALLBACK)
+def show_configuration_callback(ls: TTRLanguageServer, *args):
     """Gets exampleConfiguration from the client settings using callback."""
     def _config_callback(config):
         try:
@@ -208,19 +208,19 @@ def show_configuration_callback(ls: TTSLanguageServer, *args):
     ls.get_configuration(ConfigurationParams(items=[
         ConfigurationItem(
             scope_uri='',
-            section=TTSLanguageServer.CONFIGURATION_SECTION)
+            section=TTRLanguageServer.CONFIGURATION_SECTION)
     ]), _config_callback)
 
 
-@tts_server.thread()
-@tts_server.command(TTSLanguageServer.CMD_SHOW_CONFIGURATION_THREAD)
-def show_configuration_thread(ls: TTSLanguageServer, *args):
+@ttr_server.thread()
+@ttr_server.command(TTRLanguageServer.CMD_SHOW_CONFIGURATION_THREAD)
+def show_configuration_thread(ls: TTRLanguageServer, *args):
     """Gets exampleConfiguration from the client settings using thread pool."""
     try:
         config = ls.get_configuration(ConfigurationParams(items=[
             ConfigurationItem(
                 scope_uri='',
-                section=TTSLanguageServer.CONFIGURATION_SECTION)
+                section=TTRLanguageServer.CONFIGURATION_SECTION)
         ])).result(2)
 
         example_config = config[0].get('exampleConfiguration')
@@ -231,8 +231,8 @@ def show_configuration_thread(ls: TTSLanguageServer, *args):
         ls.show_message_log(f'Error ocurred: {e}')
 
 
-@tts_server.command(TTSLanguageServer.CMD_UNREGISTER_COMPLETIONS)
-async def unregister_completions(ls: TTSLanguageServer, *args):
+@ttr_server.command(TTRLanguageServer.CMD_UNREGISTER_COMPLETIONS)
+async def unregister_completions(ls: TTRLanguageServer, *args):
     """Unregister completions method on the client."""
     params = UnregistrationParams(unregisterations=[
         Unregistration(id=str(uuid.uuid4()), method=COMPLETION)

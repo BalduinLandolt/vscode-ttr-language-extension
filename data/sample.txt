@@ -1,0 +1,122 @@
+
+# Unger 3, 694f.
+
+[div:type=miracle:n=154]
+[p]
+
+[pb=303]
+
+[lb=1] gd(it;tsup) {slong}u(er)d . h(an;bar)n {slong}ag(di;isup) t(il;isup) min . E{fins} þu villt e(igi;isup) hlyda
+[lb=2] þ(ui;isup) {slong}(e;m;bar) m(adr;ar) byd{rrot} þi(er) . {slong}k(al;bar)tu {slong}kiotliga deyia m(ed;ezh)
+[lb=3] ollu(m;bar) þinv(m;bar) h(er) . ept(ir;er) þ(e;bar)tta {fins}o{rrot} [name:type=person] attila [/name] b(ro;rsup)tt
+[lb=4] a{fins} [name:type=place] Jtalia [/name] . (ok) ley{slong}ti alla h(er)tekna m(enn;bar) . þa {slong}(e;m;bar)
+[lb=5] h(an;bar)n hellt ad{rrot} j bondvm .
+
+[/p]
+[/div]
+
+
+# Unger 4, 1030
+
+[div:type=miracle:n=155]
+
+
+[lb=6] [head] hv(er){slong}u t(il;isup) ko(m;bar) (con;condes)cep(t;bar)io . [/head]
+[p]
+
+[lb=7] [hi:rend=2] [supplied:reason=omitted] A [/supplied] [/hi] Þ(ei;bar)m tima {slong}(e;)m(;bar) [name:type=person] vilhialm(ur) ba{slong}t(ar)d{rrot} [/name] h(er)¬
+[lb=8]tugi [name:type=place] no{rrot}man(n;dot)ie [/name] lagdi vnd(ir;er) s(ik;csup) [name:type=place] engl(an;d;combcurl) [/name]
+[lb=9] v(ar) {slong}a aboti e(r;er) [name:type=person] elphin(us) [/name] het . j k(ir;bar)kiu heilags [name:type=person] aug(us)¬
+[lb=10]tini [/name] b(isku;bar)ps {aalig} [name:type=place] engl(an;d;combcurl) [/name] i j hu(er){rrot}i {slong}ial{fins}(ur) h(an;bar)n (ok) h(an;bar)s ept(ir;er)¬
+[lb=11]kom(en;bar)d{rrot} b(isku;bar)p(ar)n(ir;er) huila . S(e;m;bar) [name:type=org] dan(ir;er) [/name] hey(ra) at [name:type=place] engl(an;d;combcurl) [/name]
+[lb=12] e(r;er) vn(n;bar)it a{fins} [name:type=org] no{rrot}man(n;bar)is [/name] . /*fixme: should be colon, not dot*/ bua þ(ei;bar){rrot} {slong}in vopn (ok) h(er){slong}k¬
+[lb=13]ap at þ(ei;bar){rrot} {fins}(ar)i t(il;isup) [name:type=place] engl(an;d;combcurl){ezh} [/name] (ok) {rscap}æki þa {aalig} b(ro;osup)tt . En(n;dot)
+[lb=14] e(r;er) hin(n;nleg) mattuga{ezh}ti no{rrot}dm(anna;asup) h(er)tugi [name:type=person] vilhjalm(ur) [/name]
+[lb=15] hey{rrot}(ir;er) þ(at;bar) . {slong}end(ir;er) h(an;bar)n {fins}y{rscap}{slong}agd(an;nsup) . abota [name:type=person] elphinu(m;bar) [/name] j
+[lb=16] [name:type=place] danm(or;osup)k [/name] at h(an;bar)n {fins}o{rrot}vitnad(i{ezh}t;zsup) hu(or;osup)t {slong}aun(n;dot) v(ær;er)i þ(es;bar)si
+[lb] [catch]h(er){slong}aga[/catch]
+
+
+[pb=304]
+
+[lb=1] h(er){slong}aga . Abotin(n;nleg) kem(ur) nu j [name:type=place] danm(or;osup)k [/name] at g(er)a k(onun;bar)g{slong}ins
+[lb=2] ey{rrot}indi . (ok) {fins}ær(ir;er) dana k(onun;bar)gi þær gia{fins}(ir;er) e(r;er) [name:type=person] vilhialm(ur) [/name]
+[lb=3] k(onun;bar)g{rrot} {slong}endi h(onu;bar)m . S(e;m;bar) h(an;bar)n he{fins}(ir;er) langan(n;dot) tima þ(ar) v(er)it
+[lb=4] þigg(ur) h(an;bar)n heim ley{fins}i a{fins} k(onun;bar)ginu(m;bar) . (ok) {slong}tig(ur) {aalig} {slong}kip
+[lb=5] m(ed;ezh) {slong}inu(m;bar) kompanu(m;bar) . þa e(r;er) þ(ei;bar){rrot} v(our;osup) komn(ir;er) miok la¬
+[lb=6]ngt j ha{fins} . kem(ur) at þ(ei;bar)m s(uo;osup) m(ik;csup)ill {slong}to{rrot}m(ur) at þ(ei;bar){rrot}
+[lb=7] {slong}ia s(er) enga von li{fins}s . j þ(ui;isup)liku(m;bar) ha{slong}ka . {slong}n(er)u{ezh}t
+[lb=8] þ(ei;bar){rrot} þ(a;bar)ng(at;tsup) t(il;isup) t(ra)u{slong}t{ezh} . {slong}(e;m;bar) ja{fins}n(an;nsup) e(r;er) hialpin buin .
+[lb=9] bidiandi s(uo;osup) t(il;isup) G(uds;us) . Hey{rrot} hin(n;dot) millda{ezh}ti (ok)
+[lb=10] hin(n;dot) mattug(a{ezh}t;zsup)i g(u;d;combcurl) . my{slong}kuna o(ss;sscap) j þ(e;bar)s(su;none)m /*fixme*/ ha¬
+[lb=11]{slong}ka . at e(igi;isup) {fins}a(im;msup) v(er) eili{fins}a pinu . d{rrot}ekt(ir;er) m(ed;ezh)
+[lb=12] {slong}to{rrot}mi (ok) bylgiu(m;bar) {slong}iov(ar)ins . S(e;m;bar) þ(ei;bar){rrot} tala þ(es;bar)sa
+[lb=13] hluti (ok) m(ar)ga ad{rrot}a þ(e;bar)s(su;none)m /*fixme*/ lika . {slong}ia þ(ei;bar){rrot} ein(n;dot) m(ann;nsup)
+[lb=14] j b(isku;bar)ps {slong}k(rv;vsup)di m(ed;ezh) mit(rv;vsup) v(it;isup) {slong}kip(it;tsup) . (ok) kall(ar) t(il;isup) {slong}in [name:type=person] el¬
+[lb=15]phinu(m;bar) [/name] abota (ok) tal(ar) t(il;isup) h(an;bar)s . þ(e;bar)s(su;none)m /*fixme*/ o{rrot}du(m;bar) . e{fins} þu
+[lb=16] girn(i{ezh}t;zsup) at {fins}o{rrot}d(a{ezh}t;zsup) {slong}ia{fins}(ar) ha{slong}ka . (ok) ko(m;bar)a heill hei(m;bar) j
+[lb] [catch]þitt[/catch]
+
+
+[pb=305]
+
+[lb=1] þitt l(an;d;combcurl) . {slong}k(al;bar)tu jata m(er) j G(uds;us) vitni at þu {slong}k(al;bar)t hall¬
+[lb=2]da hatidliga getnad(ar) dag mod(ur) k(ri;isup){slong}t{ezh} . Abotin(n;nleg)
+[lb=3] {slong}ua{rrot}(ar) . hv(er){slong}u {slong}k(al;bar) ek þ(at;bar) g(er)a eda {aalig} hv(er)iu(m;bar) degi . b(isku;bar)p¬
+[lb=4]in {slong}u(ar)ar . {slong}etta jd(us) decemb(ri;isup)s . {slong}k(al;bar)tu {fins}y{rscap}{slong}agda
+[lb=5] hatid hallda . (ok) p(re;bar)dica (ok) eggia {aalig} j ollu(m;bar) {slong}tod(um;msup)
+[lb=6] hu(at;tsup) e(r;er) þu o{rrot}k(ar) . at þ(es;bar)si dag(ur) {slong}e a{fins} ollu(m;bar) halldin(n;nleg) .
+[lb=7] Abotin(n;nleg) {slong}py{rscap} . huilikt tida_halld {slong}k(al;bar) þa ha{fins}a .
+[lb=8] (ok) {aalig} hu(er)n h{aalig}tt . h(an;bar)n {slong}eg(ir;er) . allt þ(at;bar) {slong}e(m;bar) {slong}eg(i{ezh}t;zsup) (ok) {slong}yng{ezh}t
+[lb=9] {aalig} h(en;bar)n(ar) burd(ar) degi {slong}k(al;bar) (ok) {slong}egia{ezh}t {aalig} h(en;bar)n(ar) getnad(ar)
+[lb=10] degi . (ok) s(uo;osup) {slong}(e;m;bar) þ(ar) {slong}tend{rrot} nativitas . {slong}k(al;bar) hi(er) {slong}egi¬
+[lb=11]a{ezh}t (con;condes)ceptio {aalig} þ(es;bar)s(u;none)m /*fixme*/ degi . S(e;m;bar) abotin(n;dot) he{fins}(ir;er)
+[lb=12] hey{rrot}t þ(es;bar)si o{rrot}d . hu(er){fins}(ur) {slong}a {slong}(e;m;bar) h(onu;bar)m vit(ra)d(i{ezh}t;zsup) . en(n;dot) ved¬
+[lb=13]{rrot}it mink(ar) . bæta þ(ei;bar){rrot} {rscap}eida {slong}in(n;dot) . (ok) {fins}a {slong}id(an;nsup) hæg(an;nsup)
+[lb=14] by{rscap} . allt þ(ar) t(il;isup) e(r;er) þ(ei;bar){rrot} taka [name:type=place] engl(an;d;combcurl) [/name] . h(an;bar)n g(er)di kun(n;dot)¬
+[lb=15]iga þa hluti {slong}(e;m;bar) h(an;bar)n ha{fins}di hey{rrot}t (ok) {slong}ed ollu(m;bar)
+[lb=16] þ(ei;bar)m e(r;er) h(an;bar)n matti (ok) {slong}kipadi j [name:type=place] ramen{slong}ien{slong}is [/name] k(ir;bar)k
+/*fixme: hyphenated!*/
+[lb] [catch]iu[/catch]
+
+
+[pb=306]
+
+[lb=1] iu hu(er){rrot}i e(r;er) h(an;bar)n {slong}ty{rrot}di at þ(es;bar)si {fins}y{rscap}_{slong}ogd hatid
+[lb=2] {slong}k(yl;bar)di {aalig} hv(er)iu {aalig}ri halld(a{ezh}t;zsup) hatidliga {slong}etta jd(us)
+[lb=3] decemb(ri;isup)s . hellt h(an;bar)n þ(at;bar) {slong}ama m(ed;ezh) {slong}on(n;bar)vm godvil¬
+[lb=4]ia alla daga {slong}ins li{fins}s . Ollu(m;bar) þ(ei;bar)m e(r;er) {fins}y{rscap}_{slong}agd(an;nsup)
+[lb=5] dag hallda g(u;d;combcurl)i t(il;isup) heid(ur)s (ok) h(an;bar)s mod{rrot} . veitt(i{ezh}t;zsup) a{fins}
+[lb=6] {slong}yni þ(ei;bar){rrot}(ar) {slong}omu ju(n;bar)g{fins}(rv;vsup) him(in;bar){rscap}(iki;isup)s d(ro;osup)ttni(n;bar)g(ar) [name:type=person] [hi:rend=caps] marie [/hi] [/name]
+[lb=7] {fins}(ri;isup)d{rrot} (ok) heil{slong}a . en(n;dot) ept(ir;er) þ(e;bar)tta li{fins} eili{fins} huild j
+[lb=8] him(in;bar){rscap}(iki;isup) . þ(at;bar) lati s(er) {slong}oma at veita {slong}a e(r;er) li{fins}(ir;er) (ok)
+[lb=9] {rscap}ik(ir;er) ein(n;dot) g(u;d;combcurl) j þ{rscap}en(n;nleg)i(n;bar)gu am(en;bar) .
+
+[/p]
+[/div]
+
+
+# Unger 4, 1171
+
+[div:type=miracle:n=156]
+
+
+[lb=10] [head] A{fins} m(ar)iu_m(esso;osup) {slong}id(ar)i . [/head]
+
+[p]
+
+[lb=11] [hi:rend=3][supplied:reason=omitted]b[/supplied][/hi]Vrd(ar)_dag(ur) hin(n;nleg)(ar) helgu{ezh}tu G(uds;us) mod(ur) ju(n;bar)g¬
+[lb=12]{fins}(rv;vsup) [name:type=person] [hi:rend=caps] marie [/hi] [/name] var lang(an;nsup) tima {fins}y{rrot}{slong}t
+[lb=13] ecki halldin(n;nleg) j k(ri;isup){slong}tnin(n;dot)i . en(n;dot) s(uo;osup) {slong}eg(i{ezh}t;zsup) at þ(at;bar) v(ar) a{fins}
+[lb=14] g(u;d;combcurl)i vit(ra)d {aalog} þ(en;bar)na hatt {slong}(e;m;bar) hi(er) {slong}eg(ir;er) . Ein{slong}etu_m(adr;ar)
+[lb=15] nock(ur) heilag(ur) j {slong}inu(m;bar) li{fins}nadi . hey{rrot}di {aalig} hi¬
+[lb=16]n(n;dot)i {slong}omu nott hu(er)t {aalig}r {fins}ag{rrot}an(n;bar) engla {slong}ong
+[lb] [catch] j [/catch]
+
+[/p]
+[/div]
+
+
+
+
+

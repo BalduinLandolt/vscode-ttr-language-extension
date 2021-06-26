@@ -1,6 +1,7 @@
 {
-    "name": "tts-extension",
-    "description": "TurboTranscriber extension",
+    "name": "turbotranscriber",
+    "displayName": "TurboTranscriber Language Extension",
+    "description": "TurboTranscriber Language Extension",
     "author": "Balduin Landolt",
     "repository": "",
     "license": "MIT",
@@ -13,7 +14,7 @@
         "Other"
     ],
     "activationEvents": [
-        "onLanguage:tts"
+        "onLanguage:ttr"
     ],
     "contributes": {
         "commands": [
@@ -24,15 +25,37 @@
         ],
         "configuration": {
             "type": "object",
-            "title": "TTS Configuration",
+            "title": "TTR Configuration",
             "properties": {
-                "tts.exampleConfiguration": {
+                "ttr.exampleConfiguration": {
                     "scope": "resource",
                     "type": "string",
                     "default": "You can override this message."
                 }
             }
-        }
+        },
+        "languages": [
+            {
+                "id": "ttr",
+                "aliases": [
+                    "TurboTranscriber Raw Transcription",
+                    "TurboTranscriberRaw",
+                    "ttr",
+                    ".ttr"
+                ],
+                "extensions": [
+                    ".ttr"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ttr",
+                "scopeName": "text.turbotranscriber.raw",
+                "path": "./syntaxes/ttr.tmLanguage.json"
+            }
+        ]
     },
     "main": "./client/out/extension",
     "scripts": {

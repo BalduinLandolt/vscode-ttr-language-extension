@@ -17,7 +17,7 @@
 import argparse
 import logging
 
-from .server import tts_server
+from .server import ttr_server
 
 logging.basicConfig(filename="pygls.log", level=logging.DEBUG, filemode="w")
 
@@ -49,11 +49,11 @@ def main():
     args = parser.parse_args()
 
     if args.tcp:
-        tts_server.start_tcp(args.host, args.port)
+        ttr_server.start_tcp(args.host, args.port)
     elif args.ws:
-        tts_server.start_ws(args.host, args.port)
+        ttr_server.start_ws(args.host, args.port)
     else:
-        tts_server.start_io()
+        ttr_server.start_io()
 
 
 if __name__ == '__main__':

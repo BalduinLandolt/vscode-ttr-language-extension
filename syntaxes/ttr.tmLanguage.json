@@ -1,0 +1,71 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "TurboTranscriber Raw Transcription",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#tags"
+		},
+		{
+			"include": "#glyphs"
+		},
+		{
+			"include": "#abbr"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{"include": "#block-comment"},
+				{"include": "#line-comment"}
+			]
+		},
+		"block-comment": {
+			"name": "comment.block.ttr",
+			"begin": "\\/\\*",
+			"end": "\\*\\/"
+		},
+		"line-comment": {
+			"name": "comment.line.number-sign.ttr",
+			"match": "#.*"
+		},
+		"tags": {
+			"name": "punctuation.definition.tag",
+			"match": "\\[\\/?(\\w+)((([:|=])(\\w+))*)\\]",
+			"captures": {
+				"1": {"name": "entity.name.tag.ttr"},
+				"2": {"patterns": [
+					{
+						"name": "punctuation.definition.tag",
+						"match": "[:|=](\\w+)",
+						"captures": {
+							"1": {"name": "entity.other.attribute-name.ttr"}
+						}
+					}
+				]}
+			}
+		},
+		"glyphs": {
+			"patterns": [{
+				"name":"constant.numeric.ttr",
+				"match": "{.*?}"
+			}]
+		},
+		"abbr": {
+			"patterns": [{
+				"name":"string.regexp.ttr",
+				"match": "\\(.*?\\)",
+				"captures": {
+					"0": {
+						"patterns":[{
+							"include": "#glyphs"
+							}]
+						}
+					}
+			}]
+		}
+	},
+	"scopeName": "text.turbotranscriber.raw"
+}
